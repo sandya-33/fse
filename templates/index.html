@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hangman</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <h1>Hangman</h1>
+    <p>Attempts left: {{ attempts_left }}</p>
+    <p>{{ guessed_word }}</p>
+    <form method="POST" action="/guess">
+        <input type="text" name="guess" maxlength="1">
+        <input type="submit" value="Guess">
+    </form>
+</body>
+</html>

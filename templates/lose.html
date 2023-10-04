@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hangman - You Lose!</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <h1>Sorry, You Lose!</h1>
+    <p>The word was: {{ word }}</p>
+    <form method="POST" action="/play_again">
+        <input type="submit" value="Play Again">
+    </form>
+</body>
+</html>
